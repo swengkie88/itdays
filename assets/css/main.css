@@ -1,5 +1,5 @@
 /* General Theming */
-*{ margin: 0 auto; padding: 0; list-style-type: none;} .light{color: #222!important;} .light p{color: gray;} body{ background: #222222; font-family: 'raleway', sans-serif; font-size: 12pt; color: #fff;} a{text-decoration: none; color: inherit;} .clear{clear: both;} p{ line-height: 2;} i{ color: #dfdfdf;} .text-center{text-align: center;}
+*{ margin: 0 auto; padding: 0; list-style-type: none;} .light{color: #222!important;} .light p{color: gray;} body{ background: #222222; font-family: 'raleway', sans-serif; font-size: 12pt; color: #fff;} a{text-decoration: none; color: inherit;} .clear{clear: both;} p{ line-height: 2;} i{ color: #dfdfdf;} .text-center{text-align: center;} .text-center p{margin-top: 30px;}
 /* Importing font */
 @font-face{
     font-family: 'raleway';
@@ -46,8 +46,16 @@ form input, form textarea{
     margin: 10px 0px;
     box-sizing: border-box;
     height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: transparent;
+    border: 1px solid white;
 }
+/* form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder{
+    color: white;
+}
+
+form input:-moz-placeholder, form textarea:-moz-placeholder{
+    color: white;
+} */
 form textarea{
     resize:  vertical;
     padding: 10px;
@@ -56,7 +64,7 @@ form textarea{
 }
 form input:hover, form textarea:hover ,form input:focus, form textarea:focus{
     outline: none;
-    box-shadow: 0px 0px 12px #00BCD4;
+    box-shadow: 0px 0px 12px #2196f34f;
 }
 form .btn{
     margin: 0px;
@@ -131,7 +139,7 @@ header .navbar li, header .navbar li a{
     display: inline-block;
 }
 .navbar > li > a{
-    padding: 0px 20px;
+    padding: 0px 10px;
     transition:0.5s;
     background-repeat:no-repeat;
     background-image:url(../icons/line2.svg);
@@ -161,7 +169,7 @@ header .navbar li, header .navbar li a{
     display: none;
 }
 footer{
-    background:  #222222;
+    background:  #212121;
     position:  relative;
     height: auto;
     padding: 20px 0px;
@@ -187,7 +195,8 @@ footer{
 	padding: 0 0 0 25px;
 } */
 .kolom3 ul li{
-	padding: 0 0 0 5px;
+    padding: 0 0 0 5px;
+    margin-bottom: 10px;
 }
 .kolom3 ul li a i{
     margin-right: 10px;
@@ -433,11 +442,20 @@ section:hover h1{
     }
 
 }
+
+#wrapperAcara{
+    width: 80%; 
+    position: relative; 
+    min-height: 887px;
+    padding: 50px 0 100px 0;
+}
 .body-lomba {
     text-align: center;
-    height: 400px;
+    min-height: 400px;
     position: relative;
     transition: 500ms;
+    padding: 10px 0;
+    box-sizing: border-box;
 }
 .body-lomba:hover{
     box-shadow: 0 5px 30px rgba(0, 0, 0, .48);
@@ -454,7 +472,7 @@ section:hover h1{
     padding: 20px;
     box-sizing: border-box;
     line-height: 1.5;
-    height: 36%;
+    height: 150px;
     text-overflow: ellipsis;
     overflow: hidden;
     margin-bottom: 10px;
@@ -462,7 +480,7 @@ section:hover h1{
 .more-btn{
 	padding: 10px;
 	box-sizing: border-box;
-	background-color: #f82373;
+	background-color: #1683da;
 	text-align: center;
 	cursor: pointer;
 	color: white;
@@ -474,7 +492,7 @@ section:hover h1{
 	margin:40px;
 }
 .more-btn:hover{
-	background-color: #64B5F6;
+	background-color: #2196f3;
 	transition: .5s;
 }
 .list-gambar img{
@@ -494,19 +512,19 @@ section:hover h1{
 }
 .modal-header{
     position: relative;
-    background: #f82373;
-    padding: 15px 25px;
+    padding: 30px 25px;
+    color: black;
 }
 .modal-wp{
 	width: 50%;
-	height: auto;
-	background: white;
+    height: auto;
+    background: white;
 	position: relative;
-	top: 10%;
-	bottom: 5%;
 	border-radius: 5px;
 	transform: scale(0);
-	transition: 200ms;
+    transition: 200ms;
+    color: white;
+    align-self: center;
 }
 
 .modal-wp input:focus{
@@ -519,13 +537,16 @@ section:hover h1{
 	top: 14px;
 	font-size: 20px;
 	font-weight: bold;
-	color: white;
+	color: #4a4545;
+}
+.modal-wp a i{
+    color: #4a4545;
 }
 .modal-content{
     padding: 10px 20px;
 }
 .modal-content p{
-    color: #000;
+    color: white;
 }
 .column-modal{
 	position: relative;
@@ -540,9 +561,13 @@ input{
 
 #textField{
 	/* width: 100%; */
-	height: 40px;
+	height: 50px;
 	/* border: none; */
 	/* font-size: 20px; */
+}
+
+.textArea{
+    height: 130px;
 }
 
 .column-modal span{
@@ -591,7 +616,7 @@ input[type="file"]{
 }
 
 input[type="submit"]{
-	position: absolute;
+	position: relative;
 	right: 0;
 	bottom: 0;
 	padding: 10px;
@@ -612,13 +637,21 @@ input[type="submit"]:hover{
 }
 
 
-#up:target{
-	display: block;
+#up:target, #loginModal:target, #registerModal:target{
+	display: flex;
 }
 
-#up:target .modal-wp{
+#up:target .modal-wp, #loginModal:target .modal-wp, #registerModal:target .modal-wp{
 	animation: pop .2s forwards;
 	transition: .5s;
+}
+
+.authModalWrapper{
+    width: 30%;
+}
+
+.authModalWrapper input{
+    margin-bottom: 20px;
 }
 
 @keyframes pop{
@@ -635,6 +668,11 @@ input[type="submit"]:hover{
 #overlay-1:target, #overlay-2:target, #overlay-3:target, #overlay-4:target,
 #overlay-5:target, #overlay-6:target{
 	display: block;
+}
+
+#overlay-1:target .content-overlay, #overlay-2:target .content-overlay, #overlay-3:target .content-overlay, #overlay-4:target .content-overlay{
+	animation: pop .2s forwards;
+	transition: .5s;
 }
 
 
@@ -670,12 +708,19 @@ input[type="submit"]:hover{
 .form-btn, .sk, .tutor{
 	padding: 10px;
 	box-sizing: border-box;
-	background-color: #f82373;
+	background-color: #1683da;
 	display: inline-block;
 	margin-right: 20px;
 	border-radius: 3px;
 	color: white;
 	margin-bottom: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.form-btn:hover, .sk:hover, .tutor:hover{
+    background-color: #2196f3;
+    transition: .5s;
 }
 
 .closer-btn{
@@ -685,6 +730,11 @@ input[type="submit"]:hover{
 	right: 20px;
 	top: 20px;
 	font-weight: bolder;
+}
+
+#wrapperPuncak{
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 /* Stop rangkaian acara styling */
@@ -927,6 +977,18 @@ input[type="submit"]:hover{
     }
     .desc-card{
         left: 40px;
+    }
+
+    .content-overlay{
+        width: 90%;
+    }
+
+    .modal-wp{
+        width: 90%;
+    }
+
+    .list-gambar{
+        display: none;
     }
 }
 /* Stop responsive styling */
