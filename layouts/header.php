@@ -18,7 +18,7 @@
 			<ul class="navbar">
 				<li><a href="index.php" title="Beranda">Beranda</a></li>
 				<li><a href="acara.php" title="Rangkaian Acara">Rangkaian Acara</a></li>
-				<li><a href="galeri.php" title="Galeri">Galeri</a></li>
+				<li><a href="gallery.php" title="Galeri">Galeri</a></li>
 				<li><button class="btn" onclick="">Masuk</button></li>
 				<li><button class="btn" onclick="">Daftar</button></li>
 			</ul>

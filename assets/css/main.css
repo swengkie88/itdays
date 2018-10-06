@@ -404,6 +404,291 @@ section:hover h1{
 }
 /* Stop Index styling */
 
+/* Start rangkaian acara styling */
+.col {
+    transition: 2s;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.s-12 {
+    width: 100%;
+}
+@media (min-width: 750px) {
+    .m-6 {
+        width: 50%;
+    }
+}
+@media (min-width: 1200px){
+    .l-4 {
+        width: 33.333333333333333333333333333333%!important;
+    }
+}
+#acaraWp{
+    background: #373C53;
+}
+@media(max-width: 743px){
+    #acaraWp .wrapper{
+        min-height: 1780px!important;
+    }
+
+}
+.body-lomba {
+    text-align: center;
+    height: 400px;
+    position: relative;
+    transition: 500ms;
+}
+.body-lomba:hover{
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .48);
+    background: #5e6da8;
+}
+.img-lomba {
+    margin: 20px auto 0px auto;
+    width: 128px;
+    height: 128px;
+    position: relative;
+    overflow: hidden;
+}
+.desk-lomba {
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    height: 36%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.more-btn{
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #f82373;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	border-radius: 3px;
+	position: relative;
+	width: 50%;
+	transition: .5s;
+	display: inline-block;
+	margin:40px;
+}
+.more-btn:hover{
+	background-color: #64B5F6;
+	transition: .5s;
+}
+.list-gambar img{
+	width: 100%;
+}
+/* Tambahkan Acara Modals */
+.overlay-modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.9);
+	z-index: 999;
+	display: none;
+	color: #eee;
+}
+.modal-header{
+    position: relative;
+    background: #f82373;
+    padding: 15px 25px;
+}
+.modal-wp{
+	width: 50%;
+	height: auto;
+	background: white;
+	position: relative;
+	top: 10%;
+	bottom: 5%;
+	border-radius: 5px;
+	transform: scale(0);
+	transition: 200ms;
+}
+
+.modal-wp input:focus{
+	outline: none;
+}
+
+.modal-wp a{
+	position: absolute;
+	right: 20px;
+	top: 14px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+.modal-content{
+    padding: 10px 20px;
+}
+.modal-content p{
+    color: #000;
+}
+.column-modal{
+	position: relative;
+	top: 5%;
+	width: 75%;
+	height: 90%;
+}
+
+input{
+	display: block;
+}
+
+#textField{
+	/* width: 100%; */
+	height: 40px;
+	/* border: none; */
+	/* font-size: 20px; */
+}
+
+.column-modal span{
+	width: 100%;
+	height: 3px;
+	background-color: #2196F3;
+	position: absolute;
+	left: 0;
+	color: #2196F3;
+}
+
+input[type="file"]{
+	display: none;
+}
+
+.label-modal{
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	color: #2196F3;
+	border: 3px solid #2196F3;
+	position: relative;
+	float: left;
+	left: 0;
+	margin: 10px 0px;
+	transition: .5s;
+}
+
+.label-modal:hover{
+	color: white;
+	background-color: #2196F3;
+	transition: .5s;
+}
+
+.preview{
+	position: relative;
+	top: 90px;
+	width: 100%;
+	height: 280px;
+	background-color: #ddd;
+	text-align: left;
+	color: grey;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 280px;
+}
+
+input[type="submit"]{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color: #2196F3;
+	color: white;
+	outline: none;
+	border: none;
+	font-size: 18px;
+	transition: .5s;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background-color: #186eb3;
+	transition: .5s;
+}
+
+
+#up:target{
+	display: block;
+}
+
+#up:target .modal-wp{
+	animation: pop .2s forwards;
+	transition: .5s;
+}
+
+@keyframes pop{
+	from{
+		transform: scale(0);
+	}
+
+	to{
+		transform: scale(1);
+	}
+}
+
+/* Modal Acara */
+#overlay-1:target, #overlay-2:target, #overlay-3:target, #overlay-4:target,
+#overlay-5:target, #overlay-6:target{
+	display: block;
+}
+
+
+.overlay-lomba{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.7);
+	z-index: 9999;
+	display: none;
+}
+
+.content-overlay{
+	color: #000;
+	margin: 0 auto;
+	width: 60%;
+	height: 80%;
+	background-color: white;
+	position: relative;
+	top: 10%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border-radius: 3px;
+	padding: 20px;
+	box-sizing: border-box;
+	line-height: 2;
+	animation: popup .5s forwards;
+	text-align: left;
+}
+
+.form-btn, .sk, .tutor{
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #f82373;
+	display: inline-block;
+	margin-right: 20px;
+	border-radius: 3px;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.closer-btn{
+	font-size: 25px;
+	color: white;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-weight: bolder;
+}
+
+/* Stop rangkaian acara styling */
+
 /* Gallery Style */
 
 .galleryWrapper{
