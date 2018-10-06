@@ -17,8 +17,8 @@
 			<div class="kolom3">
 				<h2>Kontak</h2>
 				<ul>
-					<li><a href="" title=""><i class="fa fa-facebook"></i> Facebook</a></li>
-					<li><a href="" title=""><i class="fa fa-love"></i> Instagram</a></li>
+					<li><a href="" title=""><i class="fab fa-facebook"></i> Facebook</a></li>
+					<li><a href="" title=""><i class="fab fa-instagram"></i> Instagram</a></li>
 					<li><a href="" title=""><i class="fa fa-envelope"></i> itdays8@gmail.com</a></li>
 					<li><a href="" title=""><i class="fa fa-phone"></i> +6283865162416</a></li>
 				</ul>
