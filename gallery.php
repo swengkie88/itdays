@@ -1,6 +1,7 @@
 <?php 
     $title = "Galeri";
-    include "layouts/header.php";
-    include "layouts/section-gallery.php"; 
-    include "layouts/footer.php"; 
+    require_once "layouts/header.php";
+    require_once "layouts/section-gallery.php"; 
+    require_once "layouts/section-auth.php";
+    require_once "layouts/footer.php"; 
 ?>
