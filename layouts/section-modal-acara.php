@@ -1,22 +1,22 @@
 <!-- Tambahkan Acara -->
 <div class="overlay-modal" id="up">
-<div class="modal-wp">
-    <div class="modal-header">
-        <h3>Tambahkan Acara</h3>
-        <a href="#closer" id="closer"><i class="fa fa-times"></i></a>
+    <div class="modal-wp">
+        <div class="modal-header">
+            <h3>Tambahkan Acara</h3>
+            <a href="#closer" id="closer"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="modal-content">
+            <form>
+                <input type="text" name="" placeholder="Nama Acara" id="textField">
+                <input type="text" name="" placeholder="Kutipan" id="textField">
+                <textarea name="" id="" cols="80" rows="2" placeholder="Deskripsi dari Acara" id="textField" class="textArea"></textarea>
+                <p>Cover Max. Size 1.5Mib</p>
+                <label for="modal-img" class="label-modal">Choose File</label>  
+                <input type="file" name="" id="modal-img">
+                <input style="position: relative;" type="submit" name="" value="Tambahakan Acara">
+            </form>
+        </div>
     </div>
-    <div class="modal-content">
-        <form>
-            <input type="text" name="" placeholder="Nama Acara" id="textField">
-            <input type="text" name="" placeholder="Kutipan" id="textField">
-            <textarea name="" id="" cols="80" rows="2" placeholder="Deskripsi dari Acara" id="textField" class="textArea"></textarea>
-            <p>Cover Max. Size 1.5Mib</p>
-            <label for="modal-img" class="label-modal">Choose File</label>  
-            <input type="file" name="" id="modal-img">
-            <input style="position: relative;" type="submit" name="" value="Tambahakan Acara">
-        </form>
-    </div>
-</div>
 </div>
 
 <!-- list acara -->
@@ -26,7 +26,7 @@
     <div class="content-overlay">
         <h2>Web Development</h2>
         <p>
-        Web Design Competition merupakan bagian dari seluruh rangkaian acara IT DAYS 2018. Dalam kompetisi ini peserta diajak turut serta menuangkan ide kreatifnya untuk memberikan kreatifitasnya melalui desain web. Tema dari Informatics’ Days 2018 kali ini yaitu Art of Technology. Dengan demikian, lomba ini mengajak para peserta untuk membuat desain web yang bisa menggabungkan seni dan teknologi menjadi satu. Kompetisi ini ditujukan untuk seluruh siswa SMA/SMK/MA sederajat di wilayah DIY dan Jawa Tengah tidak dibatasi pada level kemampuan manapun. 
+        Web Design Competition merupakan bagian dari seluruh rangkaian acara IT DAYS 2018. Dalam kompetisi ini peserta diajak turut serta menuangkan ide kreatifnya untuk memberikan kreatifitasnya melalui desain web. Tema dari Informatics’ Days 2018 kali ini yaitu Glow in the dark. Dengan demikian, lomba ini mengajak para peserta untuk membuat desain web yang bisa menggabungkan seni dan teknologi menjadi satu. Kompetisi ini ditujukan untuk seluruh siswa SMA/SMK/MA sederajat di wilayah DIY dan Jawa Tengah tidak dibatasi pada level kemampuan manapun. 
             <br><br>
         </p>
             <div class="sk">Syarat dan Ketentuan</div>

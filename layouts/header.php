@@ -13,7 +13,7 @@
 	<header>
 		<div class="fluid-wrapper flexContainer">
 			<div class="brand-logo">
-				<h1><a href="" title="Kembali ke halaman utama"><span id="colored-logo">IT</span>DAYS 2018</a></h1>
+				<h1><a href="index.php" title="Kembali ke halaman utama"><span id="colored-logo">IT</span>DAYS 2018</a></h1>
 			</div>
 			<ul class="navbar">
 				<li><a href="index.php" title="Beranda">Beranda</a></li>
