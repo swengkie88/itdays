@@ -1,5 +1,5 @@
 <body style="background: #373C53">
-    <div class="banner" style="background: url('assets/img/icons/pattern.png'); background-size: 400px; background-position: center;">
+    <div class="banner" style="background: #222222 url('assets/img/icons/pattern.png'); background-size: 400px; background-position: center;">
         <div class="overlay-filter">
             <div class="wrapper flexContainer">
                 <div class="jumbotron">

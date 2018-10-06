@@ -19,8 +19,8 @@
 				<li><a href="index.php" title="Beranda">Beranda</a></li>
 				<li><a href="acara.php" title="Rangkaian Acara">Rangkaian Acara</a></li>
 				<li><a href="gallery.php" title="Galeri">Galeri</a></li>
-				<li><button class="btn" onclick="">Masuk</button></li>
-				<li><button class="btn" onclick="">Daftar</button></li>
+				<li><a href="#loginModal"><button class="btn" onclick="">Masuk</button></a></li>
+				<li><a href="#registerModal"><button class="btn" onclick="">Daftar</button></a></li>
 			</ul>
 			<!-- <div id="user-manager">
 				<button class="btn" onclick="">Masuk</button>
@@ -50,7 +50,10 @@
 				<li><a href="index.php" title="Beranda">Beranda</a></li>
 				<li><a href="acara.php" title="Rangkaian Acara">Rangkaian Acara</a></li>
 				<li><a href="galeri.php" title="Galeri">Galeri</a></li>
-				<li><button class="btn" onclick="">Masuk</button><button class="btn" onclick="">Daftar</button></li>
+				<li>
+					<a href="#loginModal"><button class="btn" onclick="">Masuk</button></a>
+					<a href="#registerModal"><button class="btn" onclick="">Daftar</button></a>
+				</li>
 			</ul>
 		</div>
 		<div id="overlayMobile"></div>
