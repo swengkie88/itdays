@@ -7,7 +7,7 @@
                         <img src="assets/img/icons/event.png" alt="" style="margin-bottom: 30px;">
                     </div>
                     <h1>Rangkaian Acara</h1>
-                    <h3 style="margin-top: 30px; line-height:2; font-size:16px">Ayo ramaikan acara IT DAYS 2018 dengan menambahkan rangkaian acara lainnya</h3>
+                    <h3 style="margin-top: 30px; line-height:2; font-size:16px">Ayo tambahkan event yang berhubungan dengan Art of Technology biar makin seru IT Days tahun ini.</h3>
                     <a href="#up"><button class="btn" style="margin-top: 30px;" >Tambah Acara</button></a>
                 </div>
             </div>

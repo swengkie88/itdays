@@ -21,7 +21,7 @@
 
 <!-- list acara -->
 <div class="overlay-group">
-<div class="overlay-lomba" id="overlay-lomba">
+<div class="overlay-lomba" id="overlay-1">
     <a href="#close"><p class="closer-btn">X</p></a>
     <div class="content-overlay">
         <h2>Web Development</h2>
